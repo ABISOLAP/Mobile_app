@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:fitsSystemWindows="true"> <!-- Fixes: TextView is covered by System UI -->
+    android:fitsSystemWindows="true">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,17 +15,26 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="30dp" />
 
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:importantForAutofill="yes"
+        android:autofillHints="username" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp" <!-- Fixes: Touch target size too small -->
-    android:hint="Enter Password"
-    android:inputType="textPassword"
-    android:layout_marginTop="15dp"
-    android:importantForAutofill="yes" <!-- Fixes: Use Autofill warning -->
-    android:autofillHints="password" />
+        android:minHeight="48dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:importantForAutofill="yes"
+        android:autofillHints="password" />
 
     <Button
         android:id="@+id/btnLogin"

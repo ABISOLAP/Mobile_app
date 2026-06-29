@@ -20,16 +20,16 @@ public class MainActivity extends AppCompatActivity {
         Button login = findViewById(R.id.btnLogin);
 
         login.setOnClickListener(view -> {
-            Log.d( "Login", "Button clicked");+
+            Log.d("Login", "Button clicked");
 
-          //  String user = username.getText().toString().trim();
-          //  String pass = password.getText().toString().trim();
+            String user = username.getText().toString().trim();
+            String pass = password.getText().toString().trim();
 
-          //  if (user.equals("admin") && pass.equals("1234")) {
-          //      Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
-           // } else {
+            if (user.equals("admin") && pass.equals("1234")) {
+                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+            } else {
                 Toast.makeText(MainActivity.this, "Invalid Username or Password", Toast.LENGTH_SHORT).show();
-           // }
+            }
         });
     }
 }
